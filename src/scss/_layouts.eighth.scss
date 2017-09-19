@@ -1,0 +1,50 @@
+#eighth-block {
+
+    background-position: center bottom;
+
+    .image-wrapper {
+
+        @media #{$small-and-down} {
+
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        > img {
+
+            +img {
+
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+#eighth-block-form {
+    
+    padding: 20px;
+
+    .form-title {
+
+        font-size: 1.4rem;
+        
+        @extend .light;
+    }
+
+    button{
+        
+        display: block!important;
+        width: 100%;
+    }
+
+    .checkbox-field {
+        margin-bottom: 15px;
+
+        label{
+
+            font-size: .8rem;
+            line-height: 1.2;
+        }
+    }
+}

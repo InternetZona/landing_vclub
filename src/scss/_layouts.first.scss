@@ -1,0 +1,95 @@
+#first-block{ 
+    
+    background-size: cover;
+    background-position: center bottom;
+
+    .block-title {
+
+        @media #{$medium-and-up} {
+            text-align: right;
+        }
+    }
+
+    .countdown-wrapper{
+        
+        .countdown-title{
+            font-size: 1.2rem;
+            line-height: 2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+
+            @extend .center-align;
+
+            @media #{$medium-and-up} {
+                font-size: 1.6rem;
+            }
+            
+            > span{
+            
+                display: block;
+                margin: 10px 0;
+                font-weight: 500;
+                text-transform: none;
+            }
+        }
+        
+        .countdown-desc {
+
+            text-align: center;
+            font-weight: 300;            
+            font-size: 1.2rem;
+        }
+    }
+
+    .image-wrapper{
+
+        position: relative;
+
+        @media #{$medium-and-down} {
+
+            padding-bottom: 30px;
+        }
+
+        @media #{$large-and-up} {
+            padding-top: 80px;
+        }
+
+        >img {
+            display: block;
+            margin: 0 auto;
+
+            + img{
+
+                margin-top:30px;
+            }
+        }
+    }
+}
+
+#first-block-form {
+    
+    padding: 20px;
+
+    .form-title {
+
+        font-size: 1.4rem;
+        
+        @extend .light;
+    }
+
+    button{
+        
+        display: block!important;
+        width: 100%;
+    }
+
+    .checkbox-field{
+        margin-bottom: 15px;
+
+        label{
+
+            font-size: .8rem;
+            line-height: 1.2;
+        }
+    }
+}

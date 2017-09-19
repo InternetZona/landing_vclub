@@ -1,0 +1,7 @@
+node_modules/
+.vscode/
+.sass-cache/
+src/css/
+src/scss/materialize/*
+assets/
+html/

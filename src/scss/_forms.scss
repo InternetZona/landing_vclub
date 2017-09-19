@@ -1,0 +1,28 @@
+form {
+
+    .input-field{
+        > input,
+        > label{
+            font-weight: 300;
+        }
+    }
+
+    .input-field input:focus + label {
+        color: $secondary-color;
+    }
+      
+    .input-field input:focus {
+        border-bottom: 1px solid $secondary-color!important;
+        box-shadow: 0 1px 0 0 $secondary-color!important;
+    }
+
+    .checkbox-field{
+
+        &.error{
+
+            > label {
+                color: lighten($theme-color, 10%);
+            }
+        }
+    }
+}

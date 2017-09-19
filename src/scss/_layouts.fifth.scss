@@ -1,0 +1,19 @@
+#fifth-block {
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .btn-large{
+
+        margin-top: 30px;        
+        font-weight: 500;
+
+        @media #{$medium-and-down} {
+
+            height: auto;
+            line-height: 1.4;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+}

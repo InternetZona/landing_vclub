@@ -1,0 +1,34 @@
+#featured-block{
+
+    ul {
+
+        li{
+
+            font-size: 1.1rem;
+            font-weight: 300;
+            padding: 0 0 0 40px;
+            margin: 0 0 20px;
+            position: relative;
+            line-height: 1.2;
+
+            &:before{
+                content: "check";
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-family: 'Material Icons';
+                font-size: 2rem;
+                line-height: 1;
+
+                @extend .theme-color-text;
+            }
+
+            > strong {
+
+                display: block;
+                padding-bottom: 5px;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+#second-block{
+
+    z-index: 5;
+
+    ul {
+
+        > li {
+
+            font-size: 1.4rem;
+            padding: 0 0 0 40px;
+            margin: 0 0 20px;
+            position: relative;
+            line-height: 1.2;
+
+            &:before{
+                content: "check";
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-family: 'Material Icons';
+                font-size: 2rem;
+                line-height: 1;
+
+                @extend .theme-color-text;
+            }
+
+            > ul {
+
+                padding-top: 5px;
+
+                > li {
+
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    margin: 0 0 5px;
+
+                    &:before{
+                        content: 'chevron_right';
+                        font-size: 1.6rem;
+                        left: 5px;
+
+                        @extend .white-text;
+                    }
+                }
+            }
+        }
+
+        + ul {
+
+            margin-top: 40px;
+        }
+    }
+}

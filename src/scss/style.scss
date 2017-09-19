@@ -1,0 +1,19 @@
+$theme-color : #e30045;
+$primary-color: $theme-color;
+$secondary-color: $theme-color;
+
+@import "materialize/materialize.scss";
+
+@import "margins.scss";
+@import "paddings.scss";
+@import "customs.scss";
+@import "forms.scss";
+@import "countdown.scss";
+@import "modal.scss";
+
+// Layouts
+@import "layouts.scss";
+@import "page.scss";
+
+// Plugins
+@import "magnific-popup.scss";

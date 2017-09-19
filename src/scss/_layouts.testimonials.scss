@@ -1,0 +1,38 @@
+#testimonials-block {
+    background-position: center bottom;
+    z-index: 5;
+
+    .testimonial-item {
+
+        .testimonial-text {
+            padding-bottom: 15px;
+            font-weight: 300;
+        }
+    
+        .testimonial-client{
+    
+            position: relative;
+            font-size: 1.1rem;
+            font-weight: 500;
+            min-height: 50px;
+            padding-left: 60px;
+
+            @extend .valign-wrapper;
+
+
+            img {
+
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        + .testimonial-item {
+
+            @media #{$medium-and-down} {
+                margin-top: 15px;
+            }
+        }
+    }
+}
