@@ -197,9 +197,9 @@
                         if (response.success) {
                             switch ( $this.attr('id') ) {
                                 case 'upsell-form' : 
-                                    window.location.href = window.location.origin + "/thanks/";
+                                    window.location.href = window.location.origin + "/thanks-upsell/";
                                     break;
-                                default: window.location.href = window.location.origin + "/thanks-upsell/";
+                                default: window.location.href = window.location.origin + "/thanks/";
                             }
                         }
 
